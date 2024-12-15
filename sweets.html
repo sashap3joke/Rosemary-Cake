@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets</title>
+    <link rel="shortcut icon" href="img/page-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sweets.css">
+</head>
+
+<body>
+    <header data-include="header.partial.html"></header>
+    <main>
+        <h2 class="sweets__title">Our Sweets</h2>
+        <img class="sweets__icon" src="img/plant-line.svg" alt="Icon arrow">
+        <div class="sweets__container">
+            <section class="sweets__our-sweets-list"></section>
+        </div>
+        <section class="sweets-custom-cakes">
+            <h2 class="sweets__title">Custom Cakes</h2>
+            <img class="sweets__icon" src="img/plant-line.svg" alt="Icon arrow">
+            <p class="sweets__description">Do you want us to bake something special for your party?</p>
+            <div class="sweets__button">
+                <a class="sweets__make-order" href="contacts#form">Make an order</a>
+            </div>
+            <h2 class="sweets__title">Examples</h2>
+            <img class="sweets__icon" src="img/plant-line.svg" alt="Icon arrow">
+            <div class="sweets__slider-container">
+                <div class="sweets__slider">
+                    <div class="sweets__slider-line">
+                        <div class="slider__image-container">
+                            <img class="sweets__image" src="img/sweets-page/custom-cake-1.png" alt="Grogu cake.">
+                        </div>
+                        <div class="slider__image-container">
+                            <img class="sweets__image" src="img/sweets-page/custom-cake-2.png" alt="Peter Rabbit cake.">
+                        </div>
+                        <div class="slider__image-container">
+                            <img class="sweets__image" src="img/sweets-page/custom-cake-3.png" alt="Cute deers cake.">
+                        </div>
+                        <div class="slider__image-container">
+                            <img class="sweets__image" src="img/sweets-page/custom-cake-4.png" alt="Mikey Mouse cake.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sweets__buttons-container">
+                <button class="slider_prev">&lt;</button>
+                <button class="slider_next">&gt;</button>
+            </div>
+        </section>
+        <h2 class="sweets__title">Popular Cakes</h2>
+        <img class="sweets__icon" src="img/plant-line.svg" alt="Icon arrow">
+        <div class="sweets__container">
+            <section class="sweets__popular-cakes-list"></section>
+        </div>
+    </main>
+    <footer data-include=" footer.partial.html">
+    </footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="./js/sweets.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

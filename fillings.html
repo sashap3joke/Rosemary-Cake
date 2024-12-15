@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fillings Page | Cakery Website</title>
+    <link rel="shortcut icon" href="img/page-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/fillings.css">
+</head>
+
+<body>
+    <header data-include="header.partial.html"></header>
+
+    <main class="main">
+        <section class="cake-fillings__section">
+            <div class="cake-fillings__container container">
+                <h2 class="cake-fillings__heading">Cake Fillings</h2>
+                <img class="cake-fillings__icon" src="img/plant-line.svg" alt="Icon arrow">
+            </div>
+            <div class="cake-fillings__cards container">
+            </div>
+        </section>
+        <section class="custom-cake-fillings__section">
+            <div class="custom-cake-fillings__container container" >
+                <h2 class="custom-cake-fillings__heading">Custom Cake</h2>
+                <img class="custom-cake-fillings__icon" src="img/plant-line.svg" alt="Icon arrow">
+                <div class="custom-cake-fillings__items">
+                    <p class="custom-cake-fillings__description">Do you want us to bake something special for your perfect party?</p>
+                    <a href="#form" class="custom-cake-fillings__link">Make an order</a>
+                </div>
+            </div>
+        </section>
+        <section class="latest-fillings__section">
+            <div class="latest-fillings__container container">
+                <h2 class="latest-fillings__heading">Latest Fillings</h2>
+                <img class="latest-fillings__icon" src="img/plant-line.svg" alt="Icon arrow">
+            </div> 
+            <div class="latest-fillings__cards container">
+            </div>
+        </section>
+        <section class="fillings__form">
+            <div class="container">
+                <form action="#" method="post" id="form">
+                    <h2 class="fillings__form-title">Choose Your Favorite Taste!</h2>
+                    <img class="plant-line" src="img/plant-line.svg" alt="Line image" width="70">
+                    <p class="fillings__form-text">Fill out the form and get 10% of discount for the next order!</p>
+                    <input class="fillings__form-input" type="text" name="name" placeholder="Name" required>
+                    <input class="fillings__form-input" type="tel" name="phone" placeholder="Phone Number" required>
+                    <input class="fillings__form-button form-button" type="submit" value="I want a cake!">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer data-include="footer.partial.html"></footer>
+    
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="./js/fillings.js"></script>
+</body>

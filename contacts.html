@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <header data-include="header.partial.html"></header>
+
+    <main>
+        <section>
+            <div class="contacts__body">
+              <div class="ourcontacts__title_container">
+                <h1 class="ourcontacts__title">Our Contacts</h1>
+                <img class="contacts__separator" src="img/separator.png" alt="separator">
+              </div>
+              <span class="contacts__block">
+                <div class="myinfo">
+                  <h2 class="contacts__title">
+                    Rosemary Cakes
+                  </h2>
+                  <div class="contacts__description__div">
+                    <p class="contact__description">We deliver cakes from</p>
+                    <p class="contact__description">all over San Francisco</p>
+                  </div>
+                  <span class="contacts__phonenmail">
+                    <a class="contacts__text" href="tel:+12345678900">+1 (234) 567 89 00</a>
+                    <a class="contacts__text" href="mail://rosemarycakes@email.com">rosemarycakes@email.com</a>
+                  </span>
+                  <div class="contacts__icons">
+                    <a href="https://facebook.com"><img class="sm__logo" src="img/facebook-icon.svg" alt="facebook logo"></a>
+                    <a href="https://instagram.com"><img class="sm__logo" src="img/instagram-icon.svg" alt="insta logo"></a>
+                    <a href="https://youtube.com"><img class="sm__logo" src="img/youtube-icon.svg" alt="youtube logo"></a>
+                  </div>
+                  <a href="#form" class="order__button">Order a cake</a>
+                </div>
+          
+                <div class="mymap">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.8309503759774!2d-2.525942365040433!3d53.53913600180989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b09d0fdc0dadb%3A0xf344303490933ef0!2sRosemary%20cakes!5e0!3m2!1suk!2sua!4v1699379252295!5m2!1suk!2sua"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </span>
+            </div>
+          </section>
+
+        <section class="contacts__form">
+            <div class="container">
+                <form action="#" method="post" id="form">
+                    <h2 class="contacts__form-title">Order Your Pack Of Cupcakes!!</h2>
+                    <img class="sweets-page__picture" src="img/plant-line.svg" alt="Line image" width="70">
+                    <p class="contacts__form-text">Fill out the form and get 10% of discount for the next order!</p>
+                    <input class="contacts__form-input" type="text" name="name" placeholder="Name" required>
+                    <input class="contacts__form-input" type="tel" name="phone" placeholder="Phone Number" required>
+                    <input class="contacts__form-button form-button" type="submit" value="Make an order">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer data-include="footer.partial.html"></footer>
+    
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

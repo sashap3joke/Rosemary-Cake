@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets Page</title>
+    <link rel="shortcut icon" href="img/page-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sweets-page.css">
+</head>
+
+<body>
+    <header data-include="header.partial.html"></header>
+
+    <main>
+        <section class="sweets-page container">
+            <h2 class="sweets-page__title">Cupcakes</h2>
+            <img class="sweets-page__picture" src="img/plant-line.svg" alt="Line image" width="70">
+            <div class="sweets-page__cards">
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/baby-shower.jpg" alt="Baby Shower" width="210"
+                        height="200">
+                    <h3 class="sweets-page__card-title">Baby Shower</h3>
+                    <p class="sweets-page__card-price">$50/pack</p>
+                    <p class="sweets-page__card-description">10 cupcakes in one pack</p>
+                </div>
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/easter.jpg" alt="Easter" width="210" height="200">
+                    <h3 class="sweets-page__card-title">Easter</h3>
+                    <p class="sweets-page__card-price">$40/pack</p>
+                    <p class="sweets-page__card-description">10 cupcakes in one pack</p>
+                </div>
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/briliant-wedding.jpg" alt="Brilliant Wedding"
+                        width="210" height="200">
+                    <h3 class="sweets-page__card-title">Brilliant Wedding</h3>
+                    <p class="sweets-page__card-price">$30/pack</p>
+                    <p class="sweets-page__card-description">8 cupcakes in one pack</p>
+                </div>
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/endless-love.jpg" alt="Endless Love" width="210"
+                        height="200">
+                    <h3 class="sweets-page__card-title">Endless Love</h3>
+                    <p class="sweets-page__card-price">$35/pack</p>
+                    <p class="sweets-page__card-description">8 cupcakes in one pack</p>
+                </div>
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/new-year-and-cristmas.jpg" alt="New Year & Christmas"
+                        width="210" height="200">
+                    <h3 class="sweets-page__card-title">New Year & Christmas</h3>
+                    <p class="sweets-page__card-price">$45/pack</p>
+                    <p class="sweets-page__card-description">9 cupcakes in one pack</p>
+                </div>
+                <div class="sweets-page__card">
+                    <img class="sweets-page__card-image" src="img/birthday-party.jpg" alt="Birthday Party" width="210"
+                        height="200">
+                    <h3 class="sweets-page__card-title">Birthday Party</h3>
+                    <p class="sweets-page__card-price">$30/pack</p>
+                    <p class="sweets-page__card-description">10 cupcakes in one pack</p>
+                </div>
+            </div>
+        </section>
+        <section class="sweets-page__form">
+            <div class="container">
+                <form action="#" method="post" id="form">
+                    <h2 class="sweets-page__form-title">Order Your Pack Of Cupcakes!!</h2>
+                    <img class="sweets-page__picture" src="img/plant-line.svg" alt="Line image" width="70">
+                    <p class="sweets-page__form-text">Fill out the form and get 10% of discount for the next order!</p>
+                    <input class="sweets-page__form-input" type="text" name="name" placeholder="Name" required>
+                    <input class="sweets-page__form-input" type="tel" name="phone" placeholder="Phone Number" required>
+                    <input class="sweets-page__form-button form-button" type="submit" value="Make an order">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer data-include=" footer.partial.html">
+    </footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="js/sweets-page.js"></script>
+</body>
+
+</html>
