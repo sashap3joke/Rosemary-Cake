@@ -1,0 +1,44 @@
+.order-fresh-handcrafted{
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin: auto;
+    text-align: center;
+}
+
+.order-fresh-handcrafted__title{
+    text-align: center;
+    font-size: 34px;
+    color: var(--title-color);
+    padding-bottom: 20px;
+    line-height: 55.9px;
+}
+
+.order-fresh-handcrafted__text{
+    font-family: var(--text-font);
+    font-size: 17px;
+    color: var(--text-color);
+    padding-bottom: 50px;
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    line-height: 28.9px;
+}
+
+.order-fresh-handcrafted__order-button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-button{
+    background-color: var(--button-color-passive);
+    color: var(--container-color);
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    padding: 15px 25px;
+    border-radius: 15px 50px 50px;
+    text-decoration: none;
+    margin: auto;
+    transition: background-color .2s ease-in-out;
+}

@@ -1,0 +1,344 @@
+@import url(./globals.css);
+@import url(./controls.css);
+@import url(./footer.css);
+@import url(./header.css);
+
+main {
+    background-color: var(--background-color);
+}
+
+.sweets__title {
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+.sweets__icon {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.sweets__popular-cakes-list,
+.sweets__our-sweets-list {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 40px;
+    gap: 0.5%
+}
+
+.sweets__container {
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: 50px auto 50px auto;
+}
+
+.sweets__item {
+    width: 80vw;
+    background-color: var(--container-color);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+}
+
+.sweets__image-container {
+    height: 72vw;
+    width: 70vw;
+    overflow: hidden;
+    margin: 5vw auto 2vw auto;
+}
+
+.sweets__image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sweets__item-content {
+    text-align: center;
+}
+
+.sweets__item-content h3 {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.sweets__item-content a {
+    color: var(--link-color-passive);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.sweets__item-content a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.sweets-custom-cakes {
+    background-image: none;
+    background-color: var(--container-color);
+    margin: auto;
+    padding-top: 10vw;
+    padding-bottom: 25vw;
+}
+
+
+.sweets-custom-cakes .sweets__title {
+    margin-bottom: 10px;
+}
+
+.sweets-custom-cakes .sweets__description {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vw;
+}
+
+.sweets__button {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sweets-custom-cakes .sweets__make-order {
+    background-color: var(--button-color-passive);
+    border-radius: 4px 20px 20px 20px;
+    margin: 0px auto;
+    padding: 10px 15px 10px 15px;
+    width: fit-content;
+    font-size: 6vw;
+    text-decoration: none;
+    text-align: center;
+    color: #f0e0e0;
+}
+
+.sweets-custom-cakes .sweets__make-order:hover {
+    background-color: var(--button-color);
+}
+
+.sweets__price {
+    color: var(--button-color-passive);
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.slider__image-container {
+    padding: 10px;
+
+}
+
+.slider__image-container img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.sweets__slider {
+    /* border: 2px solid red; */
+    width: 225px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.sweets__slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+
+.sweets__buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+}
+
+.slider_prev,
+.slider_next {
+    margin-top: -350px;
+    width: 20px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--button-color-passive);
+    border: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.slider_prev:active,
+.slider_next:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+
+    .sweets__popular-cakes-list,
+    .sweets__our-sweets-list {
+        margin: auto;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .sweets__item {
+        width: 27vw;
+        background-color: var(--container-color);
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+    }
+
+
+    .sweets__image-container {
+        height: 24vw;
+        width: 23vw;
+        overflow: hidden;
+        margin: 1.6vw auto 2vw auto;
+    }
+
+    .sweets__item-content h3 {
+        font-size: 1.6vw;
+        margin-bottom: 1vw;
+    }
+
+    .sweets__item-content a {
+        color: var(--link-color-passive);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .sweets__item-content a:hover {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .sweets__title {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 70px;
+        margin-bottom: 35px;
+    }
+
+    .sweets-custom-cakes {
+        background-image: url(../img/sweets-page/background.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--container-color);
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .sweets-custom-cakes .sweets__title {
+        margin-bottom: 10px;
+    }
+
+    .sweets-custom-cakes .sweets__description {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sweets__button {
+        margin-top: 20px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sweets-custom-cakes .sweets__make-order {
+        font-size: 1.1em;
+    }
+
+    .sweets__price {
+        font-size: 2vw;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .sweets__slider {
+        width: 25%;
+    }
+
+    .sweets__buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25.56%;
+    }
+
+    .slider_prev,
+    .slider_next {
+        margin-top: -38.89vw;
+        width: 20px;
+        height: 10vw;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: var(--button-color-passive);
+        border: none;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 1600px) {
+    .sweets__container {
+        width: 1600px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .sweets__popular-cakes-list,
+    .sweets__our-sweets-list {
+        margin: auto;
+        gap: 20px;
+    }
+
+    .sweets__item {
+        width: 432px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+
+    .sweets__image-container {
+        height: 384px;
+        width: 368px;
+        margin: 25.6px auto 32px auto;
+    }
+
+    .sweets__item-content h3 {
+        font-size: 25.6px;
+        margin-bottom: 16px;
+    }
+
+    .sweets__title {
+        font-size: 64px;
+    }
+
+    .sweets-custom-cakes .sweets__title {
+        margin-bottom: 10px;
+    }
+
+    .sweets__price {
+        font-size: 32px;
+    }
+}

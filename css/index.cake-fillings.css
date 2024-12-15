@@ -1,0 +1,165 @@
+.cake-fillings__items-carousel {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    align-items: center;
+    gap: 5px;
+}
+
+.cake-fillings__items-carousel-btn-prev,
+.cake-fillings__items-carousel-btn-next {
+    border-radius: 50%;
+    background-color: var(--container-color);
+    border: 2px solid var(--button-color-passive);
+    transition: background-color .2s ease-in-out;
+}
+
+.cake-fillings__items-carousel-btn-prev:hover,
+.cake-fillings__items-carousel-btn-next:hover {
+    background-color: var(--button-color-passive);
+}
+
+@media (min-width: 768px) {
+    .cake-fillings__items-carousel {
+        grid-template-columns: 25px 1fr 25px;
+        gap: 10px;
+    }
+
+    .cake-fillings__items-carousel-slide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cake-fillings__items-carousel {
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .cake-fillings__items-carousel-slide {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.cake-fillings {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    background-color: var(--container-color);
+    background-image: url("../img/index-cake-fillings-background.png");
+    background-size: cover;
+}
+.cake-fillings__title {
+    color: var(--title-color);
+    text-align: center;
+    padding-bottom: 15.5px;
+    font-size: 34px;
+}
+
+.cake-fillings__picture {
+    width: 70px;
+    height: 14px;
+    margin: auto;
+}
+
+.cake-fillings__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    margin-top: 50px;
+    box-shadow: 0 0 24px var(--shadow-color);
+    border-radius: 5px 5px;
+}
+
+.box__image {
+     padding-top: 32px;
+     padding-left: 27px;
+     padding-right: 27px;
+}
+
+.cake-fillings__item-title {
+    color: var(--title-color);
+    font-family: 'Merienda', cursive;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.cake-fillings__item-price {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--price-color);
+    padding-bottom: 25px;
+}
+
+.cake-fillings__item-description {
+    text-align: center;
+    margin: 0 30px 30px 30px;
+    font-size: 17px;
+    line-height: 28.9px;
+}
+
+.cake-fillings__see-more-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cake-fillings__see-more-button {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    border: 2px solid var(--button-color-passive);
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 15px 50px 50px 50px;
+    text-decoration: none;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    transition:  background-color .2s ease-in-out;
+}
+
+.cake-fillings__see-more-button:hover {
+    background-color: var(--button-color-passive);
+    color: var(--container-color);
+}
+
+@media (min-width: 768px) {
+    .cake-fillings__title {
+        font-size: 38px;
+    }
+
+    .cake-fillings__item-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .cake-fillings__item-price {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cake-fillings__title {
+        font-size: 43px;
+    }
+
+    .cake-fillings__item-title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .cake-fillings__item-price {
+        font-size: 22px;
+    }
+
+    .box__image {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+   }
+}

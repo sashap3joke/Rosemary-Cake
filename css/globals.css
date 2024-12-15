@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(108, 100, 110);
+    --title-color: rgb(69, 64, 67);
+    --price-color: #e22028;
+    --background-color: #fef7f0;
+    --container-color: white;
+    --input-background-color: rgba(69, 64, 67, 0.12);
+    --input-focus-color: rgb(59, 153, 252);
+    --button-color: #aa1a1a;
+    --button-color-passive: #e22028;
+    --shadow-color: lightgray;
+    --border-color: #e22028;
+    --link-color-passive: #4C6386;
+    --link-color: #a8b7d5;
+    --font: 'Merienda', cursive;
+    --text-font: 'Lato', sans-serif;
+    --button-font: 'Open Sans', sans-serif;
+    --link-font: "Source Sans Pro",sans-serif;
+    scroll-behavior: smooth;
+    font-family: var(--text-font);
+    margin: auto;
+    background-color: var(--background-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font);
+    color: var(--title-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+input:focus {
+    outline-color: var(--input-focus-color);
+    font-size: 17px;
+}

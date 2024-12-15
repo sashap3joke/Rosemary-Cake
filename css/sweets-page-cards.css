@@ -1,0 +1,82 @@
+.sweets-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    background-color: var(--container-color);
+}
+.sweets-page__title {
+    color: var(--title-color);
+    text-align: center;
+    padding-bottom: 15.5px;
+    font-size: 34px;
+}
+
+.sweets-page__picture {
+    width: 70px;
+    height: 14px;
+    margin: auto;
+}
+
+.sweets-page__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    margin-top: 50px;
+    box-shadow: 0 0 24px var(--shadow-color);
+    border-radius: 5px 5px;
+}
+
+.sweets-page__card-image {
+     padding-top: 32px;
+     padding-left: 27px;
+     padding-right: 27px;
+     display: block;
+     object-fit: cover;
+}
+
+.sweets-page__card-title {
+    color: var(--title-color);
+    font-family: 'Merienda', cursive;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.sweets-page__card-price {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--price-color);
+    padding-bottom: 25px;
+}
+
+.sweets-page__card-description {
+    text-align: center;
+    margin: 0 30px 30px 30px;
+    font-size: 17px;
+    line-height: 28.9px;
+}
+
+@media (min-width: 768px) {
+    .sweets-page__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .sweets-page__title {
+        font-size: 38px;
+    }
+
+    .sweets-page__card-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .sweets-page__card-price {
+        font-size: 21px;
+    }
+}

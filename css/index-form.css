@@ -1,0 +1,101 @@
+.index-form {
+    background-image: url(../img/index-form-backgrount-img.webp);
+    background-size: cover;
+    min-width: 320px;
+    width: 100%;
+    padding: 85px 0;
+}
+
+.index-form .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-form__img img {
+    display: flex;
+    justify-self: center;
+}
+
+.index-form__box {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    box-shadow: rgba(130, 134, 143, 0.25) -3px 3px 26px 5px;
+    margin-top: 50px;
+    min-width: 260px;
+    max-width: 470px;
+}
+
+.index-form__box form {
+    padding: 29px 27px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.index-form__box form h2 {
+    letter-spacing: -0.714px;
+    line-height: 44.2px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.index-form__box form .plant-line img {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.index-form__box form p {
+    line-height: 30.6px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.index-form__box form .form-input {
+    color: var(--title-color);
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 25px;
+    background-color: rgba(69, 64, 67, 0.12);
+    border: 0px rgba(69, 64, 67, 0.12);
+    border-radius: 10px 50px 50px 50px;
+    letter-spacing: 1px;
+}
+
+.index-form__box form .form-input::placeholder {
+    color: rgba(69, 64, 67, 0.4);
+    font-weight: 400;
+}
+.index-form-status {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .index-form .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        padding-left: -10px;
+    }
+
+    .index-form__box {
+        background-color: var(--container-color);
+        border-radius: 10px;
+        box-shadow: rgba(130, 134, 143, 0.25) -3px 3px 26px 5px;
+        margin-top: 50px;
+        min-width: 260px;
+        max-width: 470px;
+        margin-right: 40px;
+    }
+
+    .index-form__img img {
+        display: flex;
+        justify-self: center;
+        margin-top: 70px;
+    }
+}
