@@ -1,0 +1,79 @@
+.express-yourself__section {
+    background-color: var(--container-color);
+    padding-top: 85px;
+    padding-bottom: 85px;
+    padding: 32px;
+}
+
+.express-yourself__title {
+    font-size: 34px;
+    color: var(--title-color);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}   
+
+.express-yourself__icon {
+    width: 70px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+.express-yourself__information {
+    padding-top: 60px;
+    line-height: 28.9px;
+}
+
+.express-yourself__subtitle {
+    font-size: 22px;
+    color: var(--title-color);
+    font-family: var(--font);
+    padding-top: 20px;
+}
+
+.express-yourself__paragraph{
+    font-family: var(--text-font);
+    font-size: 17px;
+    color: var(--text-color);
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.express-yourself__link {
+    background-color: var(--button-color-passive);
+    color: var(--container-color);
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 15px 50px 50px 50px;
+    text-decoration: none;
+    font-family: var(--link-font);
+    font-weight: 600;
+}
+
+.express-yourself__link:hover {
+    background-color: var(--button-color);
+}
+
+.express-yourself__image {
+    padding-top: 20px;
+    padding-top: 75px;
+    width: 100%;
+    height: auto;
+}
+
+.express-yourself {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .express-yourself {
+       grid-template-columns: repeat(2, 1fr);
+       padding: 0 32px;
+    }
+    .express-yourself__image {
+        max-width: 100%;
+        height: auto;
+    }
+}

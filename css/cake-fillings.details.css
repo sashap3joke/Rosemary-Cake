@@ -1,0 +1,71 @@
+.cake-fillings__section {
+    padding: 10px;
+    margin: 10px;
+    background-image: url("../img/cake-fillings-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cake-fillings__heading {
+    font-size: 43px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.cake-fillings__icon {
+    width: 70px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cake-fillings__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px 30px;
+    margin-top: 45px;
+} 
+
+.cake-fillings__card {
+    display: grid;
+    grid-row-gap: 16px;
+    background-color: var(--container-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-color) 3px 3px 26px 5px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.cake-fillings__card .card__image {
+    max-width: 100%;
+}
+
+.cake-fillings__card .card__title {
+    font-size: 26px;
+}
+
+.cake-fillings__card .card__price {
+    font-size: 22px;
+    font-family: var(--font);
+    color: var(--price-color);
+    font-weight: bold;
+}
+
+.cake-fillings__card .card__description {
+    font-size: 17px;
+    line-height: 28.9px;
+}
+
+@media (min-width: 600px) {
+    .cake-fillings__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cake-fillings__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

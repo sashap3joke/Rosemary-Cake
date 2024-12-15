@@ -1,0 +1,80 @@
+.choose-your-sweets {
+    padding: 20px;
+    margin: 20px;
+    background-image: url("../img/cake-fillings-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.choose-your-sweets__items {
+    text-align: center;
+}
+
+.choose-your-sweets__title{
+    font-size: 34px;
+    color: var(--title-color);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.choose-your-sweets__icon {
+    width: 70px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+.choose-your-sweets__cards {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 50px 30px;
+    line-height: 33.6px;
+    padding-top: 40px;
+}
+.choose-your-sweets__card {
+    background-color: var(--container-color);
+    padding-top: 32px;
+    padding-left: 27px;
+    padding-right: 27px;
+    box-shadow: var(--shadow-color) -3px 3px 26px 5px;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+.choose-your-sweets__card .card__image {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.choose-your-sweets__card .card__title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.choose-your-sweets__card .card__link {
+    text-decoration: none;
+    color: var(--link-color-passive);
+    font-size: 14px;
+    font-family: var(--link-font);
+    font-weight: bold;
+}
+    
+.choose-your-sweets__card .card__link:hover{
+    color: var(--link-color);
+}
+
+@media (min-width: 600px) {
+    .choose-your-sweets__cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+@media (min-width: 900px) {
+    .choose-your-sweets__cards {
+        grid-template-columns: repeat(3, 1fr)
+
+    }
+}

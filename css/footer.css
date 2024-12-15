@@ -1,0 +1,102 @@
+.footer {
+    display: block;
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    min-width: 320px;
+}
+.footer .logo{
+    width: 60%;
+}
+.footer__nav{
+    margin-top: 30px;
+}
+.footer__nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer__nav-links li{
+    list-style-type: none;
+}
+.footer__nav-links li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--title-color);
+}
+
+
+.footer__nav-links li a:hover{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--title-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.footer__social-media{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.footer__social-media a{
+    display: block;
+    width: 30px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+.footer__social-media a:hover{
+    display: block;
+    width: 30px;
+    background-color: var(--background-color);
+    border-radius: 8px; 
+    padding: 1px;
+}
+.footer__social-media a img{
+    padding: 7px;
+}
+.footer__info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+.footer__info p{
+    color: var(--price-color);
+    padding-bottom: 25px;
+}
+@media (min-width: 768px){
+    .footer {
+        display: block;
+        background-color: var(--container-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .footer .logo{
+        width: 70%;
+        max-width: 500px;
+        padding: 0;
+    }
+    .footer__nav{
+        margin-top: 10px;
+    }
+    .footer__nav-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer__info{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+}
